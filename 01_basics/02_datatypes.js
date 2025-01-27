@@ -25,3 +25,6 @@ console.log(typeof null);      // null is a type of object
 console.log(typeof undefined); //undefined
 
 
+
+
+
