@@ -25,7 +25,7 @@ navbar(company = "hitesh")
 // APIs are some values recieved from backend & how do we write these values (typically json format)
 
 {
-    "name": "hitesh",               // both keys & values strings in json
+    "name": "hitesh",               // both keys & values are strings in json
     "coursename": "js in hindi",
     "price": "free"
 }

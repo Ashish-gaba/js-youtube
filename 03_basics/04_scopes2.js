@@ -44,7 +44,7 @@ function addone(num){
 console.log(addone(5))
 
 
-console.log(addTwo(5)) // will give error as function assigned to variable
+// console.log(addTwo(5)) // will give error as function assigned to variable
 const addTwo = function(num){  // expressions
     return num + 2
 }
