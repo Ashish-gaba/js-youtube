@@ -1,4 +1,5 @@
-// for each lop
+// for each loop
+// takes callback function - //callback functions don't have names
 
 const coding = ["js", "ruby", "Python", "cpp"]
 
