@@ -33,6 +33,7 @@ for (const [key, value] of map) {
 }
 
 
+
 // in Object
 const myObject = {
     'game1': 'NFS',
