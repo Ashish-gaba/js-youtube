@@ -1,5 +1,7 @@
 //Creating promises
 
+//note - Promise is an object (READ DOCUMENTATIONS)
+
 //Promise has 2 parts - resolve, reject
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
@@ -59,7 +61,7 @@ promiseFour
 .then((user) => {
     console.log(user);
     return user.username
-}).then((username) => {
+}).then((username) => { //HERE .THEN TAKES VALUES FROM PREV RETURN VAL
     console.log(username)
 }).catch(function(error){
     console.log(error)
@@ -100,20 +102,20 @@ consumePromiseFive()
 //Fetching data from API
 //fetch takes url and returns a promise
 //Using async-await function
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-//         // console.log(response);
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        // console.log(response);
         
-//         const data = await response.json() //this also takes time -> therefore await
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error)     
-//     }
+        const data = await response.json() //this also takes time -> therefore await
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error)     
+    }
     
-// }
+}
 
-// getAllUsers()
+getAllUsers()
 
 
 // Using .then.catch
@@ -128,4 +130,8 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 )
 
 //This is just for commit
+
+// INTERVIEW QUESTION-
+//PROMISE MEI aapne request kari to usme error aagya status code 404 to wo aako resolve mei milega ya reject mei
+// ANs - As request execute hogyi to humesha hume response (resolve) mei hi milega as error (reject) mei tab milta jab request bhej hi nahi paata otherwise promises don't know about your error codes
 
